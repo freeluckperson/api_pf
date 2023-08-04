@@ -6,7 +6,6 @@ const app = express()
 app.use(morgan('dev'))
 app.use(express.json())
 
-app.get('/ping', (_, res)=>res.send('pong'))
 app.use('/api', authRoutes)
 
 export default app

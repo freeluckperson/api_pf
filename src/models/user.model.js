@@ -16,6 +16,8 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+},{
+  timestamps: true
 })
 
 // User es el [] y userSchema los {} que van dentro del []
